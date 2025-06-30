@@ -8,13 +8,13 @@ namespace Ejercicio4.Models
 {
     internal class Vehiculo
     {
-        String patente="";
+        String patente = "";
         Double kilometraje;
-        
 
-    
 
-    public void CrearVehiculo(String p, Double k)
+
+
+        public void CrearVehiculo(String p, Double k)
         {
             patente = p;
             kilometraje = k;
@@ -31,6 +31,8 @@ namespace Ejercicio4.Models
             kilometraje += k;
         }
 
+        public double VerKilometraje()
+        { return kilometraje; }
 
     }
 }

@@ -30,7 +30,7 @@
         {
             labelCantViajes = new Label();
             label1 = new Label();
-            listBox1 = new ListBox();
+            listBoxPatentes = new ListBox();
             btnResumenFinal = new Button();
             btnRegistrarViaje = new Button();
             btnRegistrar = new Button();
@@ -53,14 +53,14 @@
             label1.TabIndex = 10;
             label1.Text = "Viajes :";
             // 
-            // listBox1
+            // listBoxPatentes
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(165, 12);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(179, 214);
-            listBox1.TabIndex = 9;
+            listBoxPatentes.FormattingEnabled = true;
+            listBoxPatentes.ItemHeight = 15;
+            listBoxPatentes.Location = new Point(165, 12);
+            listBoxPatentes.Name = "listBoxPatentes";
+            listBoxPatentes.Size = new Size(179, 214);
+            listBoxPatentes.TabIndex = 9;
             // 
             // btnResumenFinal
             // 
@@ -69,6 +69,7 @@
             btnResumenFinal.Size = new Size(98, 51);
             btnResumenFinal.TabIndex = 8;
             btnResumenFinal.Text = "Resumen Final";
+            btnResumenFinal.Click += btnResumenFinal_Click;
             // 
             // btnRegistrarViaje
             // 
@@ -78,6 +79,7 @@
             btnRegistrarViaje.TabIndex = 7;
             btnRegistrarViaje.Text = "Cargar Viaje";
             btnRegistrarViaje.UseVisualStyleBackColor = true;
+            btnRegistrarViaje.Click += btnRegistrarViaje_Click;
             // 
             // btnRegistrar
             // 
@@ -87,19 +89,21 @@
             btnRegistrar.TabIndex = 6;
             btnRegistrar.Text = "Registrar";
             btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
-            // Form1
+            // fPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(386, 298);
             Controls.Add(labelCantViajes);
             Controls.Add(label1);
-            Controls.Add(listBox1);
+            Controls.Add(listBoxPatentes);
             Controls.Add(btnResumenFinal);
             Controls.Add(btnRegistrarViaje);
             Controls.Add(btnRegistrar);
-            Name = "Form1";
+            Name = "fPrincipal";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();
@@ -109,7 +113,7 @@
 
         public Label labelCantViajes;
         private Label label1;
-        private ListBox listBox1;
+        private ListBox listBoxPatentes;
         private Button btnResumenFinal;
         private Button btnRegistrarViaje;
         private Button btnRegistrar;

@@ -28,12 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "fResumen";
+            button1 = new Button();
+            listBoxPatentes = new ListBox();
+            SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.DialogResult = DialogResult.Cancel;
+            button1.Location = new Point(87, 388);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 3;
+            button1.Text = "Salir";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // listBoxPatentes
+            // 
+            listBoxPatentes.FormattingEnabled = true;
+            listBoxPatentes.ItemHeight = 15;
+            listBoxPatentes.Location = new Point(24, 12);
+            listBoxPatentes.Name = "listBoxPatentes";
+            listBoxPatentes.Size = new Size(225, 349);
+            listBoxPatentes.TabIndex = 2;
+            // 
+            // fResumen
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(275, 438);
+            Controls.Add(button1);
+            Controls.Add(listBoxPatentes);
+            Name = "fResumen";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "fResumen";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button button1;
+        public ListBox listBoxPatentes;
     }
 }
